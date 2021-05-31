@@ -17,7 +17,7 @@ class CreateEmployeesTable extends Migration
             $table->id();
 
             $table -> string('firstname');
-            $table -> string('lasttname');
+            $table -> string('lastname');
             $table -> integer('ral');
 
             $table->timestamps();
