@@ -10,7 +10,8 @@ class MainController extends Controller
 {
     public function home()
     {
-        $employees = Employee::all();
+        // $employees = Employee::all();
+        $employees = Employee::with('tasks')->get();
 
         return view('pages.home', compact('employees'));
     }
