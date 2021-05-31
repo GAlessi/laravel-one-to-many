@@ -11,4 +11,9 @@ class Task extends Model
         'description',
         'employee_id'
     ];
+
+    public function employee()
+    {
+        return $this -> belongsTo(Employee::class);
+    }
 }
